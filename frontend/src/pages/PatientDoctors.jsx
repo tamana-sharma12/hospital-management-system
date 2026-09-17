@@ -13,7 +13,7 @@ function PatientDoctors() {
   const getDoctors = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:4000/doctors"
+        "https://hospital-management-system-coral-two.vercel.app/doctors"
       );
 
       setDoctors(response.data.doctors);

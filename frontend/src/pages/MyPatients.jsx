@@ -20,7 +20,7 @@ function MyPatients() {
     try {
       // Get all appointments
       const appointmentResponse = await axios.get(
-        "http://localhost:4000/appointments"
+        "https://hospital-management-system-coral-two.vercel.app/appointments"
       );
 
       const allAppointments =
@@ -35,7 +35,7 @@ function MyPatients() {
 
       // Get all patients
       const patientResponse = await axios.get(
-        "http://localhost:4000/patients"
+        "https://hospital-management-system-coral-two.vercel.app/patients"
       );
 
       const allPatients = patientResponse.data.patients;

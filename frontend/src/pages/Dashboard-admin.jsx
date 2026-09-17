@@ -22,19 +22,19 @@ const fetchDashboardData = async () => {
   try {
 
     const patientsResponse = await axios.get(
-      "http://localhost:4000/patients"
+     "https://hospital-management-system-coral-two.vercel.app/patients"
     );
 
     const doctorsResponse = await axios.get(
-      "http://localhost:4000/doctors"
+    "https://hospital-management-system-coral-two.vercel.app/doctors"
     );
 
     const appointmentsResponse = await axios.get(
-      "http://localhost:4000/appointments"
+      "https://hospital-management-system-coral-two.vercel.app/appointments"
     );
 
     const departmentsResponse = await axios.get(
-      "http://localhost:4000/departments"
+     "https://hospital-management-system-coral-two.vercel.app/departments"
     );
 
 setDoctors(doctorsResponse.data.doctors);

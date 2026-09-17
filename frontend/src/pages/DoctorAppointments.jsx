@@ -17,7 +17,7 @@ function DoctorAppointments() {
     try {
 
       const response = await axios.get(
-        "http://localhost:4000/appointments"
+       "https://hospital-management-system-coral-two.vercel.app/appointments"
       );
 
       const allAppointments =

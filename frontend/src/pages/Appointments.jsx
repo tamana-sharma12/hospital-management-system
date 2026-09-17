@@ -34,7 +34,7 @@ function Appointments() {
   const getAppointments = async () => {
     try {
       const response = await axios.get(
-        "http://localhost:4000/appointments"
+        "https://hospital-management-system-coral-two.vercel.app/appointments"
       );
 
       setAppointments(response.data.appointments);
@@ -60,7 +60,7 @@ function Appointments() {
 
     try {
       await axios.post(
-        "http://localhost:4000/appointments",
+        "https://hospital-management-system-coral-two.vercel.app/appointments",
         appointmentForm
       );
 
@@ -99,7 +99,7 @@ function Appointments() {
 
     try {
       await axios.delete(
-        `http://localhost:4000/appointments/${id}`
+`https://hospital-management-system-coral-two.vercel.app/appointments/${id}`
       );
 
       alert("Appointment deleted successfully");
@@ -127,7 +127,8 @@ function Appointments() {
 
     try {
       await axios.put(
-        `http://localhost:4000/appointments/${editAppointment._id}`,
+        `https://hospital-management-system-coral-two.vercel.app/appointments/${id}`,
+        
         {
           patient: editAppointment.patient,
           doctor: editAppointment.doctor,

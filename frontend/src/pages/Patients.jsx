@@ -20,7 +20,7 @@ function Patients() {
     try {
 
       const response = await axios.get(
-        "http://localhost:4000/patients"
+        "https://hospital-management-system-coral-two.vercel.app/patients"
       );
 
       setPatients(response.data.patients);
@@ -50,7 +50,7 @@ const handleUpdate = async () => {
   try {
 
     const response = await axios.put(
-      `http://localhost:4000/patients/${editPatient._id}`,
+      `https://hospital-management-system-coral-two.vercel.app/patients/${editPatient._id}`,
       {
         name: editPatient.name,
         email: editPatient.email,
@@ -89,7 +89,7 @@ const handleUpdate = async () => {
   try {
 
     await axios.delete(
-      `http://localhost:4000/patients/${id}`
+     `https://hospital-management-system-coral-two.vercel.app/patients/${id}`
     );
 
     // Delete hone ke baad table update

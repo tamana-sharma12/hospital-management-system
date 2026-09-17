@@ -24,7 +24,7 @@ function PatientPrescriptions() {
     try {
 
       const response = await axios.get(
-        "http://localhost:4000/prescriptions"
+        "https://hospital-management-system-coral-two.vercel.app/prescriptions"
       );
 
       const allPrescriptions =

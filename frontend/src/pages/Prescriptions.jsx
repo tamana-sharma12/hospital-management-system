@@ -41,7 +41,7 @@ function Prescriptions() {
     try {
 
       const response = await axios.get(
-        "http://localhost:4000/prescriptions"
+    "https://hospital-management-system-coral-two.vercel.app/prescriptions"
       );
 
       setPrescriptions(response.data.prescriptions);
@@ -82,7 +82,7 @@ function Prescriptions() {
     try {
 
       await axios.post(
-        "http://localhost:4000/prescriptions",
+      "https://hospital-management-system-coral-two.vercel.app/prescriptions",
         prescriptionForm
       );
 
@@ -161,7 +161,7 @@ function Prescriptions() {
     try {
 
       await axios.put(
-        `http://localhost:4000/prescriptions/${editPrescription._id}`,
+        `https://hospital-management-system-coral-two.vercel.app/prescriptions/${editPrescription._id}`,
         prescriptionForm
       );
 
@@ -213,7 +213,7 @@ function Prescriptions() {
     try {
 
       await axios.delete(
-        `http://localhost:4000/prescriptions/${id}`
+        `https://hospital-management-system-coral-two.vercel.app/prescriptions/${id}`
       );
 
       alert("Prescription deleted successfully");

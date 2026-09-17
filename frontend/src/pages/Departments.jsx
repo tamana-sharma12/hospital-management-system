@@ -38,7 +38,7 @@ function Departments() {
     try {
 
       const response = await axios.get(
-        "http://localhost:4000/departments"
+        "https://hospital-management-system-coral-two.vercel.app/departments"
       );
 
       setDepartments(response.data.departments);
@@ -74,7 +74,7 @@ function Departments() {
     try {
 
       await axios.post(
-        "http://localhost:4000/departments",
+        "https://hospital-management-system-coral-two.vercel.app/departments",
         departmentForm
       );
 
@@ -118,7 +118,7 @@ function Departments() {
     try {
 
       await axios.delete(
-        `http://localhost:4000/departments/${id}`
+       `https://hospital-management-system-coral-two.vercel.app/departments/${id}`
       );
 
       alert("Department deleted successfully");
@@ -156,7 +156,7 @@ function Departments() {
     try {
 
       await axios.put(
-        `http://localhost:4000/departments/${editDepartment._id}`,
+      `https://hospital-management-system-coral-two.vercel.app/departments/${editDepartment._id}`,
         {
           name: editDepartment.name,
           headDoctor: editDepartment.headDoctor,

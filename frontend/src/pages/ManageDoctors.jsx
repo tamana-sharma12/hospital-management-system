@@ -43,7 +43,7 @@ function ManageDoctors() {
     try {
 
       const response = await axios.get(
-        "http://localhost:4000/doctors"
+        "https://hospital-management-system-coral-two.vercel.app/doctors"
       );
 
       setDoctors(response.data.doctors);
@@ -83,7 +83,7 @@ function ManageDoctors() {
     try {
 
       const response = await axios.post(
-        "http://localhost:4000/doctors",
+        "https://hospital-management-system-coral-two.vercel.app/doctors",
         {
           name: doctorForm.name,
           email: doctorForm.email,
@@ -169,7 +169,7 @@ function ManageDoctors() {
     try {
 
       const response = await axios.put(
-        `http://localhost:4000/doctors/${editDoctor._id}`,
+        `https://hospital-management-system-coral-two.vercel.app/doctors/${editDoctor._id}`,
         {
           name: editDoctor.name,
           email: editDoctor.email,
@@ -220,7 +220,7 @@ function ManageDoctors() {
     try {
 
       const response = await axios.delete(
-        `http://localhost:4000/doctors/${id}`
+       `https://hospital-management-system-coral-two.vercel.app/doctors/${editDoctor._id}`
       );
 
       alert(response.data.message);

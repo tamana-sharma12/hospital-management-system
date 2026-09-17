@@ -21,7 +21,7 @@ function Register() {
 
   try {
     const response = await axios.post(
-      "http://localhost:4000/register",
+      "https://hospital-management-system-coral-two.vercel.app/register",
       {
         name,
         email,

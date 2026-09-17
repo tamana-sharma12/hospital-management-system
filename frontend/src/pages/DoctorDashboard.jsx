@@ -31,7 +31,7 @@ function DoctorDashboard() {
   try {
 
     const appointmentsResponse = await axios.get(
-      "http://localhost:4000/appointments"
+      "https://hospital-management-system-coral-two.vercel.app/appointments"
     );
 
     console.log(
@@ -45,7 +45,7 @@ function DoctorDashboard() {
 
 
     const patientsResponse = await axios.get(
-      "http://localhost:4000/patients"
+      "https://hospital-management-system-coral-two.vercel.app/patients"
     );
 
     setPatients(
@@ -54,7 +54,7 @@ function DoctorDashboard() {
 
 
     const prescriptionsResponse = await axios.get(
-      "http://localhost:4000/prescriptions"
+     "https://hospital-management-system-coral-two.vercel.app/prescriptions"
     );
 
     setPrescriptions(

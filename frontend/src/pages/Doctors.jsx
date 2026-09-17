@@ -11,7 +11,7 @@ useEffect(() => {
 
 const getDoctors = async () => {
   try {
-    const response = await axios.get("http://localhost:4000/doctors");
+    const response = await axios.get("https://hospital-management-system-coral-two.vercel.app/doctors");
     setDoctors(response.data.doctors);
   } catch (error) {
     console.log("Doctors Fetch Error:", error);
