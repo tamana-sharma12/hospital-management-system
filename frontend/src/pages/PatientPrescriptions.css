@@ -1,0 +1,311 @@
+.patient-dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f9fa;
+}
+
+/* SIDEBAR */
+
+.patient-sidebar {
+  width: 270px;
+  min-width: 270px;
+  min-height: 100vh;
+  background: #0f7d89;
+  padding: 25px 18px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.patient-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.patient-logo > span {
+  width: 42px;
+  height: 42px;
+  background: white;
+  color: #0f7d89;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.patient-logo h2 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.patient-logo p {
+  margin: 3px 0 0;
+  font-size: 11px;
+  opacity: 0.8;
+}
+
+.patient-sidebar nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.patient-sidebar nav a {
+  text-decoration: none;
+  color: white;
+  padding: 13px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.patient-sidebar nav a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.patient-logout {
+  margin-top: auto;
+  border: none;
+  background: transparent;
+  text-decoration: none;
+  color: white;
+  padding: 13px 15px;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.patient-logout:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+
+/* MAIN CONTENT */
+
+.patient-content {
+  flex: 1;
+  min-width: 0;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.patient-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.patient-header > div:first-child p {
+  margin: 0 0 6px;
+  color: #0f7d89;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.patient-header h1 {
+  margin: 0;
+  color: #173f46;
+  font-size: 30px;
+}
+
+.patient-profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.patient-profile > span {
+  width: 42px;
+  height: 42px;
+  background: #dff4f6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.patient-profile strong {
+  display: block;
+  color: #173f46;
+}
+
+.patient-profile small {
+  color: #789096;
+}
+
+
+/* SECTION */
+
+.patient-section {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px rgba(15, 125, 137, 0.08);
+}
+
+.patient-section-heading {
+  margin-bottom: 20px;
+}
+
+.patient-section-heading h2 {
+  margin: 0;
+  color: #173f46;
+}
+
+.patient-section-heading p {
+  margin: 6px 0 0;
+  color: #789096;
+  font-size: 14px;
+}
+
+
+/* PRESCRIPTIONS */
+
+.prescription-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.patient-prescription-card {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 20px;
+  border: 1px solid #e5eff1;
+  border-radius: 10px;
+  background: #fbfefe;
+}
+
+.medicine-icon {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  background: #dff4f6;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.prescription-info {
+  flex: 1;
+}
+
+.prescription-info h3 {
+  margin: 0 0 6px;
+  color: #173f46;
+  font-size: 17px;
+}
+
+.prescription-info p {
+  margin: 4px 0;
+  color: #789096;
+  font-size: 13px;
+}
+
+.prescription-details {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.prescription-details span {
+  background: #eef8f9;
+  color: #526d72;
+  padding: 6px 9px;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.prescription-instructions {
+  margin-top: 10px !important;
+}
+
+.prescription-status {
+  padding: 7px 12px;
+  background: #e4f7ed;
+  color: #218653;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.no-patient-appointments {
+  padding: 40px;
+  text-align: center;
+  color: #789096;
+  border: 1px dashed #cbdfe2;
+  border-radius: 10px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .patient-sidebar {
+    width: 220px;
+    min-width: 220px;
+  }
+
+  .patient-content {
+    padding: 25px;
+  }
+
+  .patient-prescription-card {
+    align-items: flex-start;
+  }
+
+  .prescription-status {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 650px) {
+
+  .patient-dashboard {
+    flex-direction: column;
+  }
+
+  .patient-sidebar {
+    width: 100%;
+    min-width: 100%;
+    min-height: auto;
+  }
+
+  .patient-sidebar nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .patient-content {
+    padding: 20px;
+  }
+
+  .patient-header {
+    align-items: flex-start;
+    gap: 15px;
+    flex-direction: column;
+  }
+
+  .patient-header h1 {
+    font-size: 25px;
+  }
+
+  .patient-prescription-card {
+    flex-direction: column;
+  }
+
+  .prescription-status {
+    margin-left: 0;
+  }
+}

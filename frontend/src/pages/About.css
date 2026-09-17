@@ -1,0 +1,481 @@
+/* ================= ABOUT PAGE ================= */
+
+.about-page {
+  background: #ffffff;
+}
+
+
+/* ABOUT HERO */
+
+.about-hero {
+  min-height: 380px;
+  padding: 70px 10%;
+  background: linear-gradient(
+    120deg,
+    #e9f9fb,
+    #dff5f7,
+    #f8fdff
+  );
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-hero > div:first-child {
+  max-width: 620px;
+}
+
+.about-hero span,
+.about-content > span,
+.why-heading > span,
+.mission span {
+  color: #087f83;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.about-hero h1 {
+  font-size: 48px;
+  line-height: 1.15;
+  color: #18324a;
+  margin: 15px 0;
+}
+
+.about-hero p {
+  color: #607487;
+  font-size: 16px;
+  line-height: 1.7;
+  max-width: 550px;
+}
+
+.about-hero-card {
+  width: 280px;
+  height: 280px;
+  border-radius: 30px;
+  background: white;
+  box-shadow: 0 15px 40px rgba(8, 127, 131, 0.15);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.big-cross {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background: #dff7f8;
+  color: #087f83;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 45px;
+  margin-bottom: 18px;
+}
+
+.about-hero-card h3 {
+  color: #18324a;
+  font-size: 22px;
+}
+
+.about-hero-card p {
+  color: #087f83;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+
+/* ABOUT INTRO */
+
+.about-intro {
+  padding: 80px 10%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-visual {
+  position: relative;
+  min-height: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.visual-main {
+  width: 390px;
+  height: 390px;
+  border-radius: 25px;
+
+  background: linear-gradient(
+    145deg,
+    #d7f3f5,
+    #edfafd
+  );
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.medical-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: white;
+  color: #087f83;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 55px;
+  box-shadow: 0 10px 30px rgba(8, 127, 131, 0.1);
+  margin-bottom: 20px;
+}
+
+.visual-main h2 {
+  color: #18324a;
+  font-size: 25px;
+}
+
+.visual-main p {
+  color: #087f83;
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+.experience-box {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+
+  background: #087f83;
+  color: white;
+
+  padding: 22px 28px;
+  border-radius: 15px;
+
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  box-shadow: 0 12px 30px rgba(8, 127, 131, 0.25);
+}
+
+.experience-box strong {
+  font-size: 30px;
+}
+
+.experience-box span {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.about-content h2 {
+  color: #18324a;
+  font-size: 35px;
+  line-height: 1.2;
+  margin: 12px 0 20px;
+}
+
+.about-content > p {
+  color: #647789;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 15px;
+}
+
+.about-points {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.about-points div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-points b {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #dff7f8;
+  color: #087f83;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-points span {
+  color: #40566b;
+  font-size: 13px;
+}
+
+
+/* STATISTICS */
+
+.about-stats {
+  padding: 50px 10%;
+  background: #f1fafc;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  padding: 28px;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid #e2eef0;
+}
+
+.stat-card div {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.stat-card h2 {
+  color: #087f83;
+  font-size: 30px;
+}
+
+.stat-card p {
+  color: #718096;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+
+/* WHY US */
+
+.why-us {
+  padding: 80px 10%;
+}
+
+.why-heading {
+  text-align: center;
+  max-width: 650px;
+  margin: auto;
+}
+
+.why-heading h2 {
+  color: #18324a;
+  font-size: 34px;
+  margin: 12px 0;
+}
+
+.why-heading p {
+  color: #718096;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.why-grid {
+  margin-top: 40px;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.why-card {
+  padding: 35px 28px;
+  border: 1px solid #e2eef0;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(8, 127, 131, 0.1);
+}
+
+.why-icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: #e0f7f8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 28px;
+  margin: auto;
+}
+
+.why-card h3 {
+  color: #18324a;
+  margin: 18px 0 10px;
+}
+
+.why-card p {
+  color: #718096;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+
+/* MISSION */
+
+.mission {
+  margin: 20px 10% 70px;
+  padding: 55px 60px;
+
+  background: linear-gradient(
+    110deg,
+    #087f83,
+    #0c999b
+  );
+
+  color: white;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mission > div:first-child {
+  max-width: 650px;
+}
+
+.mission span {
+  color: #d8ffff;
+}
+
+.mission h2 {
+  font-size: 32px;
+  margin: 12px 0;
+  line-height: 1.3;
+}
+
+.mission p {
+  color: #e0f8f9;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.mission button {
+  margin-top: 22px;
+  padding: 13px 22px;
+
+  border: none;
+  border-radius: 25px;
+
+  background: white;
+  color: #087f83;
+  font-weight: bold;
+}
+
+.mission-symbol {
+  width: 150px;
+  height: 150px;
+
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 65px;
+}
+
+
+/* ABOUT RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .about-hero {
+    padding: 60px 7%;
+  }
+
+  .about-hero h1 {
+    font-size: 40px;
+  }
+
+  .about-intro {
+    padding: 60px 7%;
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .about-stats {
+    padding: 40px 7%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-us {
+    padding: 60px 7%;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission {
+    margin: 20px 7% 60px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .about-hero {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .about-hero h1 {
+    font-size: 34px;
+  }
+
+  .about-hero-card {
+    width: 230px;
+    height: 230px;
+  }
+
+  .visual-main {
+    width: 300px;
+    height: 330px;
+  }
+
+  .about-points {
+    grid-template-columns: 1fr;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .mission {
+    padding: 40px 25px;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .mission h2 {
+    font-size: 26px;
+  }
+
+}

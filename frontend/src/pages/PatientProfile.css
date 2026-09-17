@@ -1,0 +1,183 @@
+/* ================= PATIENT PROFILE ================= */
+
+.profile-page-card {
+  background: #ffffff;
+  border: 1px solid #dceff2;
+  border-radius: 16px;
+  padding: 28px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.05);
+}
+
+
+/* ================= PROFILE TOP ================= */
+
+.profile-top {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #edf3f4;
+}
+
+.profile-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #e8f7f9;
+  font-size: 40px;
+}
+
+.profile-main-info h2 {
+  margin: 0 0 5px;
+  color: #123f4a;
+  font-size: 25px;
+}
+
+.profile-main-info p {
+  margin: 0;
+  color: #078b9b;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* ================= PROFILE SECTION ================= */
+
+.profile-section {
+  padding: 25px 0;
+  border-bottom: 1px solid #edf3f4;
+}
+
+.profile-section:last-child {
+  border-bottom: none;
+}
+
+.profile-section-title {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.profile-section-title > span {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #e8f7f9;
+  border-radius: 9px;
+
+  font-size: 19px;
+}
+
+.profile-section-title h3 {
+  margin: 0 0 4px;
+  color: #164f5c;
+  font-size: 17px;
+}
+
+.profile-section-title p {
+  margin: 0;
+  color: #81969b;
+  font-size: 12px;
+}
+
+
+/* ================= DETAILS GRID ================= */
+
+.profile-details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.profile-detail {
+  background: #f8fcfc;
+  border: 1px solid #e5f0f2;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.profile-detail small {
+  display: block;
+  color: #81969b;
+  font-size: 11px;
+  margin-bottom: 7px;
+}
+
+.profile-detail strong {
+  color: #355c65;
+  font-size: 14px;
+}
+
+
+/* ================= ADDRESS ================= */
+
+.profile-address {
+  background: #f8fcfc;
+  border: 1px solid #e5f0f2;
+  border-radius: 10px;
+  padding: 16px;
+
+  color: #355c65;
+  font-size: 14px;
+}
+
+
+/* ================= ACCOUNT STATUS ================= */
+
+.account-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
+  background: #e7f7ed;
+  color: #25804b;
+
+  padding: 10px 16px;
+  border-radius: 20px;
+
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.account-status span {
+  font-size: 10px;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 700px) {
+  .profile-page-card {
+    padding: 20px;
+  }
+
+  .profile-details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-main-info h2 {
+    font-size: 21px;
+  }
+}
+
+@media (max-width: 500px) {
+  .profile-top {
+    align-items: flex-start;
+  }
+
+  .profile-avatar {
+    width: 65px;
+    height: 65px;
+    font-size: 32px;
+  }
+}

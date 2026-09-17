@@ -1,0 +1,228 @@
+/* ============================= */
+/* My Patients Page */
+/* ============================= */
+
+.doctor-dashboard {
+  display: flex;
+  min-height: 100vh;
+  background: #f5f9fa;
+}
+
+.doctor-content {
+  flex: 1;
+  min-width: 0;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+/* Header */
+
+.doctor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.doctor-header p {
+  margin: 0 0 6px;
+  color: #0f7d89;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.doctor-header h1 {
+  margin: 0;
+  color: #183b43;
+  font-size: 30px;
+}
+
+/* Doctor Profile */
+
+.doctor-profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 18px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.doctor-profile span {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8f7f8;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.doctor-profile strong {
+  display: block;
+  color: #183b43;
+  font-size: 14px;
+}
+
+.doctor-profile small {
+  display: block;
+  margin-top: 3px;
+  color: #7a9298;
+}
+
+/* Main Section */
+
+.doctor-section {
+  padding: 28px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+.doctor-section-heading {
+  margin-bottom: 25px;
+}
+
+.doctor-section-heading h2 {
+  margin: 0;
+  color: #183b43;
+  font-size: 22px;
+}
+
+.doctor-section-heading p {
+  margin: 7px 0 0;
+  color: #7a9298;
+  font-size: 14px;
+}
+
+/* Patients Grid */
+
+.my-patients-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Patient Card */
+
+.my-patient-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 22px;
+  border: 1px solid #e5eff1;
+  border-radius: 14px;
+  background: #ffffff;
+  transition: 0.2s;
+}
+
+.my-patient-card:hover {
+  border-color: #b8dfe3;
+  box-shadow: 0 5px 15px rgba(15, 125, 137, 0.08);
+  transform: translateY(-2px);
+}
+
+/* Patient Avatar */
+
+.my-patient-avatar {
+  width: 55px;
+  height: 55px;
+  min-width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e8f7f8;
+  color: #0f7d89;
+  border-radius: 50%;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* Patient Information */
+
+.my-patient-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.my-patient-info h3 {
+  margin: 0 0 10px;
+  color: #183b43;
+  font-size: 18px;
+}
+
+.my-patient-info p {
+  margin: 6px 0;
+  color: #71878d;
+  font-size: 13px;
+  word-break: break-word;
+}
+
+/* Patient Details */
+
+.patient-details {
+  display: flex;
+  gap: 10px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.patient-details span {
+  padding: 6px 10px;
+  background: #f0f7f8;
+  color: #537078;
+  border-radius: 7px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* No Patients */
+
+.no-doctor-appointments {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 50px 20px;
+  color: #80979d;
+  font-size: 15px;
+  border: 1px dashed #cbdde0;
+  border-radius: 12px;
+  background: #f9fcfc;
+}
+
+/* Tablet */
+
+@media (max-width: 1000px) {
+  .doctor-content {
+    padding: 25px;
+  }
+
+  .my-patients-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+  .doctor-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .doctor-profile {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .doctor-section {
+    padding: 18px;
+  }
+
+  .my-patient-card {
+    padding: 17px;
+  }
+}
